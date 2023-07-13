@@ -52,6 +52,8 @@ spec:
       action: fetch:template
       input:
         url: ./content
+        copyWithoutTemplating:
+          - .github/workflows/\*
         values:
           name: ${{ parameters.name }}
           owner: ${{ parameters.owner }}
