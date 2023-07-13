@@ -53,7 +53,7 @@ spec:
       input:
         url: ./content
         copyWithoutTemplating:
-          - .github/workflows/\*
+          - .github/workflows/*.*
         values:
           name: ${{ parameters.name }}
           owner: ${{ parameters.owner }}
